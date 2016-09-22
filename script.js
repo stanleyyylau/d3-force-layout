@@ -49,6 +49,17 @@ function forceIt() {
 
     });
 
+    // Show country name when mouseover
+    imgNode.on('mouseover', function(d){
+      var container = d3.select('.show-name');
+      container.style('display', 'inline-block');
+      container.text(d.country)
+      .style("left", (d3.event.pageX) + "px")
+      .style("top", (d3.event.pageY) + "px");
+    }).on('mouseout', function(d){
+      var container = d3.select('.show-name');
+      container.style('display', 'none');
+    })
 }
 
 

@@ -1,12 +1,13 @@
 .show-name {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
+    background-color: white;
+    color: black;
     padding: 5px;
     font-family: fantasy;
     border-radius: 10px;
     display: none;
     position: absolute;
+    z-index: 1;
 }
 
 .container {
@@ -14,6 +15,10 @@
     height: 800px;
     margin: 0 auto;
     background-color: black;
+    -webkit-box-shadow: -1px 2px 30px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 30px 2px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 30px 2px rgba(0,0,0,0.75);
+    border-radius: 15px;
 }
 
 .img-node {
@@ -22,4 +27,19 @@
 
 .img-node img{
   position: absolute;
+}
+
+.graph-title{
+  text-align: center;
+}
+
+body {
+    background-color: #03A9F4;
+    padding-bottom: 30px;
+}
+
+.graph-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
 }
